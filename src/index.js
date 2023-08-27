@@ -1,8 +1,15 @@
-require("file-loader?name=[name].[ext]!./index.html");
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
+import EmployeeList from './EmployeeList';
+import employees from './data';
+import GroceryList from './GroceryList';
+import groceryData from './groceryData';
 
-import React from "react";
-import ReactDOM from "react-dom";
+ReactDOM.render(
+    <React.StrictMode>
 
-import App from "./App";
-
-ReactDOM.render(<App />, document.getElementById("root"));
+        <App />
+    </React.StrictMode>,
+    document.getElementById('root')
+);
